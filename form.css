@@ -3,6 +3,10 @@
   font-family: 'Roboto', sans-serif;
 }
 
+#tag-input1{
+    display: none;
+}
+
 body {
  background-color: #223040;
 }
@@ -39,7 +43,7 @@ input[type=submit] {
   padding-right: 5%;
   font-size: 1em;
   background-color: #FF3526;
-  color: #FFFF93;
+  color: #FFF;
   border-style: none;
   transition: 0.3s;
 }
@@ -72,6 +76,7 @@ input[type=date], input[type=time] {
   -webkit-box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.46);
   -moz-box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.46);
   box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.46);
+  margin-bottom: 10%;
 }
 
 input:focus, textarea:focus, select:focus{
@@ -90,6 +95,10 @@ textarea {
   color: #afafaf;
 }
 
+p {
+  font-size: 0.8em;
+  color: #afafaf;
+}
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
