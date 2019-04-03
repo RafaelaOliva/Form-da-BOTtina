@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Form pro teteu nao ficar sad</title>
+
+    <link rel="stylesheet" href="form.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">
+  </head>
+  <body>
+
+    <h1>Preencha o formulário abaixo para cadastrar o seu evento.<br>
+      Campos marcados com * são obrigatórios.
+    </h1>
+
+    <div class="form-container">
+
+      <div class="form">
+
+      <form>
+        <label>Título*</label>
+        <input type="text" id="titulo-evento">
+        <br><br>
+
+        <label>Dia/Hora*:</label><br>
+        <input type="date" name="data-evento">
+        <input type="time" id="horario-evento" name="horario-evento">
+        <br><br>
+
+        <label>Local*</label>
+        <input type="text" id="local-evento">
+        <br><br>
+
+        <label>Descrição*</label>
+        <textarea id="local-evento"></textarea>
+        <br><br>
+
+        <label>Categoria*</label>
+        <select>
+          <option>Categoria 1</option>
+          <option>Categoria 2 </option>
+          <option>Categoria 3</option>
+        </select>
+        <br><br>
+
+        <label>Tem inscrição?*</label>
+        <select>
+          <option>Sim</option>
+          <option>Não</option>
+        </select>
+        <br><br>
+
+        <label>Mais detalhes</label>
+        <textarea id="local-evento"></textarea>
+        <br>
+
+        <br><br>
+        <input type="submit" value="Enviar">
+      </form>
+      </div>
+    </div>
+
+  </body>
+</html>

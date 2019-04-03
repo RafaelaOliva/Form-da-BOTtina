@@ -1,0 +1,81 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+ background-color: #FFFF93;
+}
+
+h1 {
+  text-align: center;
+}
+div.form-container {
+  background-color: #ffffff;
+  width: 35%;
+  margin: auto;
+  padding: 2%;
+  -webkit-box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.46);
+  -moz-box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.46);
+  box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.46);
+}
+
+form label {
+  color: #FF3526;
+}
+
+input[type=text], select, textarea, select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #FF3526;
+  box-sizing: border-box;
+}
+
+input[type=date], input[type=time] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #FF3526;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 1em;
+  background-color: #FF3526;
+  color: #FFFF93;
+  border-style: none;
+}
+
+input[type=submit]:hover {
+  -webkit-box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.46);
+  -moz-box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.46);
+  box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.46);
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+
+
+@media only screen and (max-width: 600px) {
+  div.form-container {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 600px, max-width:800px) {
+  div.form-container {
+    width: 80%;
+  }
+}
