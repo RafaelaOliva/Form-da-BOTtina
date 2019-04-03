@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
   <head>
-    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Form pro teteu nao ficar sad</title>
 
     <link rel="stylesheet" href="form.css">
@@ -10,16 +10,12 @@
   <body>
 
     <h1>Preencha o formulário abaixo para cadastrar o seu evento.<br>
-      Campos marcados com * são obrigatórios.
-    </h1>
+      Campos com * são obrigatórios.</h1>
 
-    <div class="form-container">
-
-      <div class="form">
-
+    <div class="container">
       <form>
         <label>Título*</label>
-        <input type="text" id="titulo-evento">
+        <input type="text" id="titulo-evento" placeholder="Qual o nome do evento?">
         <br><br>
 
         <label>Dia/Hora*:</label><br>
@@ -28,11 +24,11 @@
         <br><br>
 
         <label>Local*</label>
-        <input type="text" id="local-evento">
+        <input type="text" id="local-evento" placeholder="Onde vai acontecer?">
         <br><br>
 
         <label>Descrição*</label>
-        <textarea id="local-evento"></textarea>
+        <textarea id="local-evento" placeholder="Conta um pouco sobre o seu evento..."></textarea>
         <br><br>
 
         <label>Categoria*</label>
@@ -51,13 +47,12 @@
         <br><br>
 
         <label>Mais detalhes</label>
-        <textarea id="local-evento"></textarea>
+        <textarea id="local-evento" placeholder="Mais detalhes que queira compartilhar..."></textarea>
         <br>
 
         <br><br>
         <input type="submit" value="Enviar">
       </form>
-      </div>
     </div>
 
   </body>
