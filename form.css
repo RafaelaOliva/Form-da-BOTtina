@@ -4,11 +4,12 @@
 }
 
 body {
- background-color: #FFFF93;
+ background-color: #223040;
 }
 
 h1 {
   text-align: center;
+  color: #fff;
 }
 
 input[type=text], select, textarea, select {
@@ -21,6 +22,7 @@ input[type=text], select, textarea, select {
   border-right: none;
   border-bottom: 1px solid #FF3526;
   box-sizing: border-box;
+  transition: 0.3s;
 }
 
 label {
@@ -39,6 +41,7 @@ input[type=submit] {
   background-color: #FF3526;
   color: #FFFF93;
   border-style: none;
+  transition: 0.3s;
 }
 
 input[type=submit]:hover {
@@ -58,6 +61,7 @@ input[type=date], input[type=time] {
   border-right: none;
   border-bottom: 1px solid #FF3526;
   box-sizing: border-box;
+  transition: 0.3s;
 }
 
 .container {
@@ -68,6 +72,22 @@ input[type=date], input[type=time] {
   -webkit-box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.46);
   -moz-box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.46);
   box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.46);
+}
+
+input:focus, textarea:focus, select:focus{
+    outline: none;
+    border-color: #79BDC6;
+    transition: 0.3s;
+}
+
+textarea {
+  resize:vertical;
+}
+
+#mais-detalhes::after {
+  content: " (Campo não obrigatório)";
+  font-size: 0.8em;
+  color: #afafaf;
 }
 
 

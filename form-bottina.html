@@ -9,44 +9,39 @@
   </head>
   <body>
 
-    <h1>Preencha o formulário abaixo para cadastrar o seu evento.<br>
-      Campos com * são obrigatórios.</h1>
+    <h1>Preencha o formulário abaixo para cadastrar o seu evento.</h1>
 
     <div class="container">
       <form>
-        <label>Título*</label>
-        <input type="text" id="titulo-evento" placeholder="Qual o nome do evento?">
+        <label>Título</label>
+        <input type="text" id="titulo-evento" placeholder="Qual o nome do evento?" maxlength="64">
         <br><br>
 
-        <label>Dia/Hora*:</label><br>
+        <label>Dia/Hora:</label><br>
         <input type="date" name="data-evento">
         <input type="time" id="horario-evento" name="horario-evento">
         <br><br>
 
-        <label>Local*</label>
-        <input type="text" id="local-evento" placeholder="Onde vai acontecer?">
+        <label>Local</label>
+        <input type="text" id="local-evento" placeholder="Onde vai acontecer?" maxlength="256">
         <br><br>
 
-        <label>Descrição*</label>
-        <textarea id="local-evento" placeholder="Conta um pouco sobre o seu evento..."></textarea>
+        <label>Descrição</label>
+        <textarea id="local-evento" placeholder="Conta um pouco sobre o seu evento..." maxlength="256"></textarea>
         <br><br>
 
-        <label>Categoria*</label>
-        <select>
-          <option>Categoria 1</option>
-          <option>Categoria 2 </option>
-          <option>Categoria 3</option>
-        </select>
+        <label>Categoria</label>
+        <input type="text" id="categoria" placeholder="Exemplos: #empreendedorismo, #tecnologia..." maxlength="128">
         <br><br>
 
-        <label>Tem inscrição?*</label>
+        <label>Tem inscrição?</label>
         <select>
           <option>Sim</option>
           <option>Não</option>
         </select>
         <br><br>
 
-        <label>Mais detalhes</label>
+        <label id="mais-detalhes">Mais detalhes</label>
         <textarea id="local-evento" placeholder="Mais detalhes que queira compartilhar..."></textarea>
         <br>
 
