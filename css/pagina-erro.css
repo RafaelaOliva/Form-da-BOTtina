@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+ background-color: #223040;
+}
+
+h1 {
+  text-align: center;
+  color: #223040;
+}
+
+@-webkit-keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+@-moz-keyframes fadeIn {
+0% { opacity: 0;}
+100% { opacity: 1; }
+}
+@-o-keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+@keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 20px;
+  width:40%;
+  margin: auto;
+  -webkit-box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.46);
+  -moz-box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.46);
+  box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.46);
+  margin-bottom: 10%;
+  margin-top:10%;
+  padding-bottom: 5%;
+  padding-top: 5%;
+}
+
+.img-check {
+  width: 20%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  opacity:0;
+  -webkit-animation: fadeIn 1s linear;
+  -moz-animation: fadeIn 1s linear;
+  -o-animation: fadeIn 1s linear;
+  animation: fadeIn 1s linear;
+  -webkit-animation-fill-mode:forwards;
+  -moz-animation-fill-mode:forwards;
+  -o-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+}
+
+.img-check-delay {
+  -webkit-animation-delay:6s;
+  -moz-animation-delay:6s;
+  -o-animation-delay:6s;
+  animation-delay:6s;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+    margin-top: 20%;
+  }
+}
