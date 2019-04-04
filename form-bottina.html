@@ -5,8 +5,7 @@
     <title>Form pro teteu nao ficar sad</title>
 
     <link rel="stylesheet" href="form.css">
-    <link rel="stylesheet" href="tags-input.css">
-    <script src="tags-input.js"></script>
+
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">
   </head>
   <body>
@@ -34,7 +33,7 @@
 
         <label id="categoria">Categoria</label>
         <p>(Escreva tags para as categorias do seu evento, separando-as por vírgulas)</p>
-        <input type="text" id="tag-input1">
+        <input type="text" id="categoria" placeholder="Exemplo: #tecnologia, #empreendedorismo..." maxlength="128">
         <br><br>
 
         <label>Tem inscrição?</label>
@@ -54,26 +53,7 @@
       </form>
     </div>
     <script>
-    var tagInput1 = new TagsInput({
-        selector: 'tag-input1',
-        duplicate : false,
-        max : 10
-    });
 
-    // add Data programatically
-    // or
-
-    // check if there are any erros in the String
-    //tagInpu1.anyErrors('another tag');
-
-    // you can destroy the plugin like this
-    //tagInput1.destroy();
-
-    // reinitialize it initialize it
-    //tagInput1.init()
-
-    // you can do all this by method chaining too
-    //tagsInput1.init().addTag().addData().destroy().init()
 
     </script>
   </body>
