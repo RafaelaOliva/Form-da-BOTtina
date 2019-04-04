@@ -1,0 +1,31 @@
+
+* {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+ background-color: #223040;
+}
+
+.container {
+  background-color: #fff;
+  color: #000;
+  padding-top: 0.5%;
+  padding-left: 1%;
+  padding-bottom: 0.5%;
+
+}
+
+.row {
+  margin-top: 5%;
+
+}
+
+hr {
+  width: 60%;
+}
+
+.m4 {
+
+}
